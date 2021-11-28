@@ -18,7 +18,7 @@ $(document).ready(()=>{
             lista = JSON.parse(localStorage.getItem("lista"));
         }
 
-        let nome = $("#tarefa").val();
+        let nome = $("#tarefa").val().trim();
         let feito = false;
 
         let tarefa = new Tarefa(nome, feito);
@@ -57,7 +57,7 @@ $(document).ready(()=>{
             if (lista.length > 3) {
                
                 $('.principal').css({
-                    'height' : $('.principal').height() + 100 + "px"	
+                    'height' : $('.principal').height() + 100 + "px"
                 });	
     
                 localStorage.setItem("alturaPrincipal", JSON.stringify($('.principal').height()));
@@ -139,7 +139,7 @@ function tarefaExcluida(index) {
 
     if (lista.length == 3 || lista.length > 3) {
         $('.principal').css({
-            'height' : $('.principal').height() - 100 + "px"	
+            'height' : $('.principal').height() - 100 + "px"
         });	    
         localStorage.setItem("alturaPrincipal", JSON.stringify($('.principal').height()));
     }

@@ -103,7 +103,14 @@ function tarefaFeita(index) {
     $("#msgExcluido").css({"display":"none"});
     $("#msgAdicionado").css({"display":"none"});
     $("#msgRepetida").css({"display":"none"});
- 
+    $("#msgFeita").css({"display":"block"});
+    
+    setTimeout(() => {
+        
+        $("#msgFeita").css({"display":"none"});
+
+    }, 3000);
+
     imprimeLista();
 }
 

@@ -7,7 +7,7 @@
     width: 50% !important;
 }
 
-#msgAdicionado, #msgExcluido, #msgRepetida{
+#msgAdicionado, #msgExcluido, #msgFeita, #msgRepetida{
     display: none;
 }
 
